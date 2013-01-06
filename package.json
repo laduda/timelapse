@@ -1,0 +1,18 @@
+{
+  "name": "Urban-timelapse",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.0.6",
+    "jade": "*",
+    "connect-assets": "~2.3.3",
+    "coffee-script": "~1.4.0",
+    "connect-handlebars": "0.0.5"
+  },
+  "development": {
+    "node-dev": "~0.2.9"
+  }
+}
