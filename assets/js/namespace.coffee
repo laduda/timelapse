@@ -1,5 +1,6 @@
 window.TL =
-	Views:{}
+	Views:
+		Modals: {}
 	Models:{}
 	Collections:{}
 	Routers:{}

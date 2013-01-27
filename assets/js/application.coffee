@@ -1,6 +1,7 @@
 # Libs
 
 #= require ./lib/jquery-1.8.1.min
+#= require ./lib/bootstrap.min
 #= require ./lib/handlebars.runtime-1.0.rc.1
 #= require ./lib/underscore-min
 #= require ./lib/backbone

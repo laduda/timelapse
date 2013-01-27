@@ -1,7 +1,7 @@
 extends layout
 
 block content
-	.container
+	div#TL.container
 		.navbar
 			.navbar-inner
 				#clouds.pull-left
@@ -24,7 +24,7 @@ block content
 						a(href='index.html')
 							img(src='images/Logo.gif', width='325', height='112', alt='UrbanTimelapse. Discover the world City by City', title='Click to return to  UrbanTimelapse homepage')
 				.cta-btns.span6.pull-right
-					a.pull-right.btn.btn-large.btn-success(href='search.html') Share Time-lapse Video
+					a#share.pull-right.btn.btn-large.btn-success(href='search.html') Share Time-lapse Video
 					a.pull-right.btn.btn-large.btn-primary(href='ammap_3.0.5 (1)/samples/explore.html', title='exploremap') Explore the World
 		ul.nav.nav-tabs
 			.skyLine
@@ -55,7 +55,6 @@ block content
 		#popular
 			ul.thumbnails
 
-
 					
 		.banner-footer.row
 			.footer-btns
@@ -76,3 +75,4 @@ block content
 		div.clearfix.footer.span12
 			h5
 				a(href='index.jade') UrbanTimelapse
+		.modals
