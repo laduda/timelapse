@@ -5,6 +5,7 @@ class TL.Routers.Main extends Backbone.Router
 		
 	index: ->
 		alert "fuck hello, bitches!"
+		@view = new TL.Views.Main({el:"#content"})
 	start: ->
 		Backbone.history.start
 			pushState: true
