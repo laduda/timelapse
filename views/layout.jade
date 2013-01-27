@@ -1,8 +1,11 @@
 doctype 5
 html
 	head
-		title Urban Timelaps
+		!=css('bootstrap')
+		!=css('main')
+		title Urban Timelapse
 	body
 		block content
 		!= js('application')
+		script(src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js")
 		script(type='text/javascript', src="/templates.js")

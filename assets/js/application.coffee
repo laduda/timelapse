@@ -7,14 +7,10 @@
 #= require ./lib/parse-1.1.15
 # require ./lib/backbone-parse
 
-
-
-
 # Backbone
 #= require ./namespace
-
-#= require_tree ./collections
 #= require_tree ./models
+#= require_tree ./collections
 #= require_tree ./views
 #= require_tree ./routers
 #= require ./init

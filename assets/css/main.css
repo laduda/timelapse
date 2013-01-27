@@ -1,0 +1,273 @@
+@import url('bootstrap/main.css');
+/****************
+Header
+****************/
+
+.navbar-inner {
+  min-height: 40px;
+  padding-right: 0px;
+  padding-left: 20px;
+  background-color: #ffffff;
+	background-image: -webkit-linear-gradient(top,white,#FFF);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+
+  border: 0;
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff', GradientType=0);
+  *zoom: 1;
+
+}
+
+#clouds {
+	margin-left: -25px;
+}
+
+.navbar {
+	margin-bottom: -20px;
+}
+
+#header {
+	margin-bottom: -8px;
+}
+
+.cta-btns {
+	margin-top: 63px;
+}
+
+.cta-btns a:first-child {
+	margin-left: 25px;
+}
+
+.facebookIcon {
+	margin: 0px 2px 2px 1px
+}
+
+/****************
+Navigation
+****************/
+
+.nav li {
+	float:right;
+	padding-right: none;
+}
+
+.nav-tabs {
+	border-bottom: 1px solid #99cccc;
+	margin-top:20px;
+}
+
+.nav-tabs > .active > a{
+	border-top:1px solid #9CC;
+	border-right:1px solid #9CC;
+	border-left:1px solid #9CC;
+}
+
+.skyLine {
+	margin-bottom: -38px;
+}
+
+.nav {
+	margin-bottom: 0px;
+}
+
+
+/****************
+Video Wrapper
+****************/
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.about-aftervideo {
+	border-bottom: 1px solid #99cccc;
+	padding-bottom: 15px;
+}
+
+.video-page {
+	border-bottom: 1px solid #99cccc;	
+}
+
+
+
+/****************
+Footer
+****************/
+
+
+
+.footer-btntext {
+	margin-top: 15px;
+}
+
+/****************
+Rest
+****************/
+
+.popular {
+	border-bottom: 1px solid #99cccc;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+
+#popular {
+	border-bottom: 1px solid #99cccc;
+}
+
+
+.footer-btns {
+	margin-top:5px;
+}
+
+.banner-footer {
+	margin-top: 10px;
+}
+
+
+
+
+.footer {
+	text-align: center;
+	margin: 25px;
+	border-top: 1px solid #99cccc;
+	margin-left: 0px;
+}
+
+
+
+
+
+.tutorials-headline {
+	text-align: center;
+	border-bottom: 1px solid #99cccc;
+}
+
+
+
+
+.tutorial-name {
+	text-align: center;
+	
+}
+
+
+.thumbnails {
+	margin-top: -6px;
+}
+
+
+.first-btn {
+	height:150px;
+	padding: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+.exploreIcon {
+	margin-bottom: 10px;
+}	
+.second-btn {
+	height:150px;
+	padding: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.shareIcon {
+	margin-bottom: 10px;
+}
+
+.third-btn {
+	height:150px;
+	padding: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.learnIcon {
+	margin-bottom: 10px;
+}
+
+.footer-buttons:hover {
+	background-color: #0044cc;
+	-moz-box-shadow: rgba(0,0,0,0.4) 0 1px 2px 0,rgba(255,255,255,0.6) 0 1px 0 inset;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 2px 0,rgba(255, 255, 255, 0.6) 0 1px 0 inset;
+	-o-box-shadow: rgba(0,0,0,0.4) 0 1px 2px 0,rgba(255,255,255,0.6) 0 1px 0 inset;
+	box-shadow: rgba(0, 0, 0, 0.4) 0 1px 2px 0,rgba(255, 255, 255, 0.6) 0 1px 0 inset;
+}
+
+
+#mapdiv {
+	width: 100%px;
+	height: 600px; 
+	background-color: #B7E5F9; 
+	margin-top:10px;
+	border-bottom: 1px solid #99cccc;
+}
+
+div#mapdiv{
+	overflow: hidden;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	height: 640px;
+	margin-top: 15px;
+}
+
+#search {
+	text-align: center;
+	border-bottom: 1px solid #99cccc;
+	padding-bottom: 10px;
+}
+
+.input{
+	width: 275px;
+	text-align: center;
+	
+	
+}
+
+.submit{
+	margin-bottom: 11px;
+}
+
+
+
+
+
+
+
+
+
+

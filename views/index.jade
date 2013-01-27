@@ -1,4 +1,127 @@
 extends layout
 
 block content
-	#timelaps
+	.container
+		.navbar
+			.navbar-inner
+				#clouds.pull-left
+					img(src='/images/clouds.gif', width="720", height="42", alt="Clouds image	")
+				ul.nav.pull-right
+					li
+						a(href='http://www.facebook.com/UrbanTimelapse')
+							img.facebookIcon(src='/images/facebook.png', width='20', height='20', alt='Facebook Icon')
+							| Like
+					li
+						a(href='#') Create Account
+							
+							
+							
+							
+		#header
+			.row
+				.span5
+					h1
+						a(href='index.html')
+							img(src='images/Logo.gif', width='325', height='112', alt='UrbanTimelapse. Discover the world City by City', title='Click to return to  UrbanTimelapse homepage')
+				.cta-btns.span6.pull-right
+					a.pull-right.btn.btn-large.btn-success(href='search.html') Share Time-lapse Video
+					a.pull-right.btn.btn-large.btn-primary(href='ammap_3.0.5 (1)/samples/explore.html', title='exploremap') Explore the World
+		ul.nav.nav-tabs
+			.skyLine
+				img(src='images/SkyLine1.png', width='778', height='34', alt='SkyLine1')
+			li.nav
+				a(href='about.html') About
+			li.nav
+					a(href='tutorials.html') Tutorials
+					
+					
+					
+					
+		h2 Watch Our Featured Time-lapse Video
+		.videoWrapper
+			iframe(src='http://player.vimeo.com/video/51569901', width='100%', height='auto', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
+		h3 San Francisco,USA (Empty america)
+		h4 Population: 812,826. Age: 236 years old.
+		p
+		| Filmmaker Ross Ching created this eerie time-lapse of San Francisco in which all the city’s streets, bridges, and sidewalks are completely empty. The
+		| effect was achieved not by shutting down San Francisco’s streets, but by clever digital trickery (see the how-to video below). The time-lapse is the
+		| first in Ching’s “Empty America” series—he plans to create more empty city time-lapes in cities around the country. The time-lapse series is inspired by
+		| the 2009 photo series “Empty L. A.” by Matt Logue.
+					
+		h3.popular Popular Time-lapse Videos
+					
+					
+					
+		#popular
+			ul.thumbnails
+				li.span3
+					.thumbnail
+					iframe(width='100%', height='auto', src='http://www.youtube.com/embed/tPELWmTc2E8?rel=0', frameborder='0', allowfullscreen='allowfullscreen')
+					h4 New York City, USA
+					p By Steve Bumgardner
+				li.span3
+					.thumbnail
+					iframe(width='100%', height='auto', src='http://www.youtube.com/embed/ZQhcJi3qiR0?rel=0', frameborder='0', allowfullscreen='allowfullscreen')
+					h4 Moscow City, Russia
+					p By zweizwei
+				li.span3
+					.thumbnail
+					iframe(src='http://player.vimeo.com/video/48260767?title=0&byline=0&portrait=0&badge=0&color=ff9933', width='100%', height='auto', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
+					h4 Smolensk City, Russia
+					p
+						| By 
+						a(href='http://vimeo.com/user13165795') SweetArt
+				li.span3
+					.thumbnail
+					iframe(src='http://player.vimeo.com/video/26049581?title=0&byline=0&portrait=0&badge=0&color=ff9933', width='100%', height='auto', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
+					h4 Barcelona, Spain
+					p
+					| By 
+					a(href='http://vimeo.com/user7290128') Loyam
+			ul.thumbnails
+				li.span3
+					.thumbnail
+					iframe(width='100%', height='auto', src='http://www.youtube.com/embed/tPELWmTc2E8?rel=0', frameborder='0', allowfullscreen='allowfullscreen')
+					h4 New York City, USA
+					p By Steve Bumgardner
+				li.span3
+					.thumbnail
+					iframe(width='100%', height='auto', src='http://www.youtube.com/embed/ZQhcJi3qiR0?rel=0', frameborder='0', allowfullscreen='allowfullscreen')
+					h4 Moscow City, Russia
+					p By zweizwei
+				li.span3
+					.thumbnail
+					iframe(src='http://player.vimeo.com/video/48260767?title=0&byline=0&portrait=0&badge=0&color=ff9933', width='100%', height='auto', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
+					h4 Smolensk City, Russia
+					p
+						| By 
+						a(href='http://vimeo.com/user13165795') SweetArt
+				li.span3
+					.thumbnail
+					iframe(src='http://player.vimeo.com/video/26049581?title=0&byline=0&portrait=0&badge=0&color=ff9933', width='100%', height='auto', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
+					h4 Barcelona, Spain
+					p
+					| By 
+					a(href='http://vimeo.com/user7290128') Loyam
+
+
+					
+		.banner-footer.row
+			.footer-btns
+				a(href='ammap_3.0.5 (1)/samples/explore.html', title='Explore the World')
+				button.span4.btn.btn-large.btn-primary.first-btn.exploreIcon
+					img(src='images/explore.png', width='64', height='64', alt='Explore')
+					div.footer-btntext
+					| Explore the World!
+				button.span4.btn.btn-large.btn-success.second-btn.shareIcon
+					img(src='images/share.png', width='64', height='64', alt='Share')
+					div.footer-btntext
+					| Share Time-lapse!
+				a(href='tutorials.html', title='Learn To Make Timelapse')
+				button.span4.btn.btn-large.btn-info.third-btn.learnIcon
+					img(src='images/learn.png', width='64', height='64', alt='Learn')
+					div.footer-btntext
+					| Learn to Make Time-lapse!
+		div.clearfix.footer.span12
+			h5
+				a(href='index.jade') UrbanTimelapse

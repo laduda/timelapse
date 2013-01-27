@@ -4,10 +4,10 @@ class TL.Routers.Main extends Backbone.Router
 	initialize: ->
 		
 	index: ->
-		console.log 'HUI'
-	
+		alert "fuck hello, bitches!"
 	start: ->
 		Backbone.history.start
-			pushState:true
+			pushState: true
+		
 		
 		
