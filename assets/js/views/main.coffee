@@ -7,6 +7,9 @@ class TL.Views.Main extends Backbone.View
 		#@collection.on 'add', @addOne, @
 		#@collection.fetch()
 		@render()
+	kill: ->
+		@unbind()
+		@remove()
 	events:
 		'click #share': 'share'
 		

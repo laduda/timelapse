@@ -1,4 +1,5 @@
-@import url('bootstrap/main.css');
+/* @import url('bootstrap.css');
+@import url('ammap/main.css');*/
 /****************
 Header
 ****************/
@@ -261,13 +262,3 @@ div#mapdiv{
 .submit{
 	margin-bottom: 11px;
 }
-
-
-
-
-
-
-
-
-
-

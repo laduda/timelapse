@@ -8,6 +8,7 @@
 #= require ./lib/parse-1.1.15
 # require ./lib/backbone-parse
 
+
 # Backbone
 #= require ./namespace
 #= require_tree ./models
@@ -15,3 +16,9 @@
 #= require_tree ./views
 #= require_tree ./routers
 #= require ./init
+
+# Maps
+#= require ./lib/ammap/ammap
+#= require ./lib/ammap/maps/world_low
+#= require ./lib/ammap/maps/world_low_contents
+#= require ./lib/ammap/kickoff
