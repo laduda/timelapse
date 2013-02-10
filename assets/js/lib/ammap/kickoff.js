@@ -38,7 +38,7 @@ AmCharts.ready(function() {
             linkToObject: worldDataProvider,
             color: "#fcff00",
             passZoomValuesToTarget: true,
-						url:"https://maps.google.com/maps?hl=en&ie=UTF-8&q=google+maps&fb=1&gl=us&hq=google&hnear=0x808579363a8549d3:0x94ea1595a675e993,Berkeley,+CA&ei=IZXSUMnsJNDrigKJxIGYCQ&ved=0CLEBELYD"
+						url: "/explore/asia"
 						},
 						
         {
