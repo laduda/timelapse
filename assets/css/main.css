@@ -3,7 +3,10 @@
 /****************
 Header
 ****************/
-
+img {
+	max-width:none !important;
+} 
+		
 .navbar-inner {
   min-height: 40px;
   padding-right: 0px;

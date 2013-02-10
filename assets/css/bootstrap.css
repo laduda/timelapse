@@ -69,7 +69,6 @@ sub {
 img {
   width: auto\9;
   height: auto;
-  max-width: 100%;
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -5335,7 +5334,6 @@ a.thumbnail:hover {
 
 .thumbnail > img {
   display: block;
-  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
 }

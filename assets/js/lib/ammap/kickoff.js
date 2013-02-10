@@ -23,7 +23,7 @@ AmCharts.ready(function() {
         selectedColor: "#BBBB00",
         color: "#BBBB00"
     };
-
+		
     continentsDataProvider = {
         mapVar: AmCharts.maps.worldContinentsLow,
 
@@ -32,36 +32,54 @@ AmCharts.ready(function() {
             id: "africa",
             linkToObject: worldDataProvider,
             color: "#24f34a",
-            passZoomValuesToTarget: true},
+            passZoomValuesToTarget: true,
+						url: "/explore/africa",
+						la: 3.864255,
+						lo: 29.882813},
         {
             id: "asia",
             linkToObject: worldDataProvider,
             color: "#fcff00",
             passZoomValuesToTarget: true,
-						url: "/explore/asia"
+						url: "/explore/asia",
+						la: 42.811522,
+						lo: 110.390625
 						},
 						
         {
             id: "australia",
             linkToObject: worldDataProvider,
             color: "#ef820d",
-            passZoomValuesToTarget: true},
+            passZoomValuesToTarget: true,
+						url: "/explore/australia",
+						la: -25.274398,
+						lo: 133.775136},
         {
             id: "europe",
             linkToObject: worldDataProvider,
             color: "#ff6666",
-            passZoomValuesToTarget: true},
+            passZoomValuesToTarget: true,
+						url: "/explore/europe",
+						la: 50.075538,
+						lo: 14.437801},
         {
             id: "north_america",
             linkToObject: worldDataProvider,
             color: "#f67200",
-            passZoomValuesToTarget: true},
+            passZoomValuesToTarget: true,
+						url: "/explore/northamerica",
+						la: 51.253775,
+						lo: -85.323214},
         {
             id: "south_america",
             linkToObject: worldDataProvider,
             color: "#e562f2",
-            passZoomValuesToTarget: true}]
+            passZoomValuesToTarget: true,
+						url: "/explore/southamerica",
+						la: -14.264383,
+						lo: -57.128906}]
     };
+
 
     var backButton = {
         svgPath: backIconSVG,
