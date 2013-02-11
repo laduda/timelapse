@@ -2,7 +2,7 @@ class TL.Views.Explore extends Backbone.View
 	initialize: ->
 		_.bindAll @
 		@loadAreas()
-		@markers = new TL.Collections.VideoObjects()
+		@markers = new TL.Collections.VideoObjects
 		@markers.fetch()
 		@markers.on 'reset', @renderMarkers, @
 		@area = @options.area || null
@@ -84,3 +84,6 @@ class TL.Views.Explore extends Backbone.View
 		  la: -13.068777
 		  lo: -57.128906
 		]
+		
+		
+		

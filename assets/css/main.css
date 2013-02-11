@@ -114,6 +114,20 @@ Video Wrapper
 
 
 
+
+/****************
+Share Form
+****************/
+
+input {
+	width: 97%;
+}
+
+.share-form {
+	color: #006fcc;
+}
+
+
 /****************
 Footer
 ****************/

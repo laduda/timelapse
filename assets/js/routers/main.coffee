@@ -4,6 +4,7 @@ class TL.Routers.Main extends Backbone.Router
 		'explore': 'explore'
 		'explore/:area' : 'explore'
 		'video/:id': 'single'
+		'tutorials': 'tutorials'
 		
 	initialize: ->
 		@view = new TL.Views.Main({el:'#TL'})
@@ -14,6 +15,11 @@ class TL.Routers.Main extends Backbone.Router
 			el: '#content'
 			area:area
 		
+	tutorials: ->
+		$('#content').empty()
+		@tutorials = new TL.Views.Tutorials
+			el: '#content'
+			
 	index: ->
 		
 	start: ->

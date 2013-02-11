@@ -21,18 +21,18 @@ block content
 			.row
 				.span5
 					h1
-						a(href='index.html')
+						a(href='/')
 							img(src='images/Logo.gif', width='325', height='112', alt='UrbanTimelapse. Discover the world City by City', title='Click to return to  UrbanTimelapse homepage')
 				.cta-btns.span6.pull-right
 					a#share.pull-right.btn.btn-large.btn-success(href='search.html') Share Time-lapse Video
-					a.pull-right.btn.btn-large.btn-primary(href='ammap_3.0.5 (1)/samples/explore.html', title='exploremap') Explore the World
+					a.pull-right.btn.btn-large.btn-primary(href='/explore', title='exploremap') Explore the World
 		ul.nav.nav-tabs
 			.skyLine
 				img(src='images/SkyLine1.png', width='778', height='34', alt='SkyLine1')
 			li.nav
-				a(href='about.html') About
+				a(href='/about') About
 			li.nav
-					a(href='tutorials.html') Tutorials
+					a(href='/tutorials') Tutorials
 					
 					
 					
@@ -51,7 +51,6 @@ block content
 			h3.popular Popular Time-lapse Videos
 					
 					
-			#mapdiv
 			
 			#popular
 				ul.thumbnails
@@ -59,20 +58,21 @@ block content
 					
 		.banner-footer.row
 			.footer-btns
-				a(title='Explore the World')
-				button.span4.btn.btn-large.btn-primary.first-btn.exploreIcon
-					img(src='images/explore.png', width='64', height='64', alt='Explore')
-					div.footer-btntext
-					| Explore the World!
-				button.span4.btn.btn-large.btn-success.second-btn.shareIcon
-					img(src='images/share.png', width='64', height='64', alt='Share')
-					div.footer-btntext
-					| Share Time-lapse!
-				a(href='tutorials.html', title='Learn To Make Timelapse')
-				button.span4.btn.btn-large.btn-info.third-btn.learnIcon
-					img(src='images/learn.png', width='64', height='64', alt='Learn')
-					div.footer-btntext
-					| Learn to Make Time-lapse!
+				a(href='/explore', title='Explore the World')
+					button.span4.btn.btn-large.btn-primary.first-btn.exploreIcon
+						img(src='images/explore.png', width='64', height='64', alt='Explore')
+						div.footer-btntext
+						| Explore the World!
+				a#share(href='home/share_form')
+					button.span4.btn.btn-large.btn-success.second-btn.shareIcon
+						img(src='images/share.png', width='64', height='64', alt='Share')
+						div.footer-btntext
+						| Share Time-lapse!
+				a(href='/tutorials', title='Learn To Make Timelapse')
+					button.span4.btn.btn-large.btn-info.third-btn.learnIcon
+						img(src='images/learn.png', width='64', height='64', alt='Learn')
+						div.footer-btntext
+						| Learn to Make Time-lapse!
 			div.clearfix.footer.span12
 				h5
 					a(href='index.jade') UrbanTimelapse
