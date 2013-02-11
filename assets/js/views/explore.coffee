@@ -17,7 +17,7 @@ class TL.Views.Explore extends Backbone.View
 		$ =>
 		  @myLatlng = new google.maps.LatLng(@area_object.la, @area_object.lo)
 		  @mapOptions =
-		    zoom: 3
+		    zoom: 4
 		    center: @myLatlng
 		    mapTypeId: google.maps.MapTypeId.ROADMAP
 		  @map = new google.maps.Map(document.getElementById("map"), @mapOptions)
@@ -81,6 +81,6 @@ class TL.Views.Explore extends Backbone.View
 		  color: "#e562f2"
 		  passZoomValuesToTarget: true
 		  url: "/explore/southamerica"
-		  la: -14.264383
+		  la: -13.068777
 		  lo: -57.128906
 		]
