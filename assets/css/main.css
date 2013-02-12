@@ -83,10 +83,15 @@ Video Wrapper
 
 .mapheader{
 	text-align: center;
-},
+	margin-top: 0px;
+}
 
-.mapsubheader {
-	margin-top: 5px;
+.mapsubheadercountry {
+	margin-top: -20px;
+}
+
+.mapsubheadersmall {
+	margin-top: -10px;
 }
 
 .videoWrapper {
