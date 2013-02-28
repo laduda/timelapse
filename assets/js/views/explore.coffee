@@ -73,14 +73,14 @@ class TL.Views.Explore extends Backbone.View
 		  id: "north_america"
 		  color: "#f67200"
 		  passZoomValuesToTarget: true
-		  url: "/explore/northamerica"
+		  url: "/explore/north_america"
 		  la: 51.253775
 		  lo: -85.323214
 		,
 		  id: "south_america"
 		  color: "#e562f2"
 		  passZoomValuesToTarget: true
-		  url: "/explore/southamerica"
+		  url: "/explore/south_america"
 		  la: -13.068777
 		  lo: -57.128906
 		]

@@ -67,7 +67,7 @@ AmCharts.ready(function() {
             linkToObject: worldDataProvider,
             color: "#f67200",
             passZoomValuesToTarget: true,
-						url: "/explore/northamerica",
+						url: "/explore/north_america",
 						la: 51.253775,
 						lo: -85.323214},
         {
@@ -75,7 +75,7 @@ AmCharts.ready(function() {
             linkToObject: worldDataProvider,
             color: "#e562f2",
             passZoomValuesToTarget: true,
-						url: "/explore/southamerica",
+						url: "/explore/south_america",
 						la: -14.264383,
 						lo: -57.128906}]
     };
