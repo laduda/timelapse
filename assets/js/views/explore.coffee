@@ -37,8 +37,12 @@ class TL.Views.Explore extends Backbone.View
 		    position: myLatlng
 		    map: @map
 		    title: name
-				animation: google.maps.Animation.DROP
+			animation: google.maps.Animation.DROP
 		  )
+			google.maps.event.addListener marker, "click", @renderVideoPage, @
+	renderVideoPage: ->
+		@$el.html Handlebars.templates['home/videoPage']()
+		@
 		
 	loadAreas: ->
 		@areas = [

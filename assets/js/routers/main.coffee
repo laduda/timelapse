@@ -3,7 +3,7 @@ class TL.Routers.Main extends Backbone.Router
 		'' : 'index'
 		'explore': 'explore'
 		'explore/:area' : 'explore'
-		'video/:id': 'single'
+		'video/:id': 'videoPage'
 		'tutorials': 'tutorials'
 		
 	initialize: ->
@@ -19,6 +19,13 @@ class TL.Routers.Main extends Backbone.Router
 		$('#content').empty()
 		@tutorials = new TL.Views.Tutorials
 			el: '#content'
+	
+	videoPage: (id) ->
+		#show the view for video with id:#id
+		$('#content').empty()
+		@videoPage = new TL.Views.VideoPage
+			el: '#content'
+			id:id
 			
 	index: ->
 		
@@ -26,8 +33,5 @@ class TL.Routers.Main extends Backbone.Router
 		Backbone.history.start
 			pushState: true
 			
-	single: (id) ->
-		#show the view for video with id:#id
-		
-		
+
 		
