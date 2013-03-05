@@ -7,10 +7,12 @@ class TL.Views.VideoPage extends Backbone.View
   renderRelated: (modelАrr)->
     $relEl = @$el.find "#related"
     _(modelАrr).each (model)->
-      relatedVideo = new TL.Views.VideoRelated
-        model: model
-      $relEl.append relatedVideo.el
-  
+      # do not rednder main video 
+      if model.id != @model.id
+        relatedVideo = new TL.Views.VideoRelated
+          model: model
+        $relEl.append relatedVideo.el
+    , @
   findVideo: ->
     query = new Parse.Query TL.Models.VideoObject
     query.get @options.id,
@@ -23,11 +25,11 @@ class TL.Views.VideoPage extends Backbone.View
   findRelated: ->
     query = new Parse.Query TL.Models.VideoObject
     query.equalTo "country_name", @model.get 'country_name'
-    query.notEqualTo "id", @model.get 'id'
+    # TODO: structure query so it rejects main video on the server
     query.find
       success: @renderRelated
       error: @showError
-
+    
   render: (model)->
     @model = model
     @$el.html @template @model.attributes
