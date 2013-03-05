@@ -5,7 +5,7 @@ class TL.Views.VideoPage extends Backbone.View
     @findVideo()
   
   renderRelated: (modelАrr)->
-    $relEl = @$el.find("#related")
+    $relEl = @$el.find "#related"
     _(modelАrr).each (model)->
       relatedVideo = new TL.Views.VideoRelated
         model: model
@@ -22,8 +22,8 @@ class TL.Views.VideoPage extends Backbone.View
 
   findRelated: ->
     query = new Parse.Query TL.Models.VideoObject
-    query.equalTo("country_name", @model.get('country_name'));
-    # query.notEqualTo("id", @model.get('id'));
+    query.equalTo "country_name", @model.get 'country_name'
+    query.notEqualTo "id", @model.get 'id'
     query.find
       success: @renderRelated
       error: @showError

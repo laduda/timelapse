@@ -1,5 +1,6 @@
 Handlebars.registerHelper 'population', (city)->
   getResult = ->
+    $.ajax
     result = city + 'pop';
 
   return new Handlebars.SafeString getResult()
