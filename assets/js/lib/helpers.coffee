@@ -1,12 +1,12 @@
-Handlebars.registerHelper 'population', (city)->
-  getResult = ->
-    $.ajax
-    result = city + 'pop';
+#Handlebars.registerHelper 'population', (city)->
+#  getResult = ->
+#    $.ajax
+#    result = city + 'pop';
 
-  return new Handlebars.SafeString getResult()
+#  return new Handlebars.SafeString getResult()
 
-Handlebars.registerHelper 'age', (city)->
+#Handlebars.registerHelper 'age', (city)->
   
-  result = city + 'age';
+#  result = city + 'age';
 
-  return new Handlebars.SafeString result
+#  return new Handlebars.SafeString result
