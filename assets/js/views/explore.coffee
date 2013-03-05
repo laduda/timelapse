@@ -40,7 +40,6 @@ class TL.Views.Explore extends Backbone.View
 			animation: google.maps.Animation.DROP
 			)
 			google.maps.event.addListener marker, "click", ->
-				window.m = TL
 				Backbone.history.navigate("video/" + (m.id), {trigger: true})
 		
 		
