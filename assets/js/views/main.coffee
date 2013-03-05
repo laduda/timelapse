@@ -11,7 +11,7 @@ class TL.Views.Main extends Backbone.View
 		@unbind()
 		@remove()
 	events:
-		'click #share': 'share'
+		'click .share': 'share'
 		
 	initModals: ->
 		shareForm = new TL.Views.Modals.Share()
