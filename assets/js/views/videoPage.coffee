@@ -15,6 +15,7 @@ class TL.Views.VideoPage extends Backbone.View
     , @
   findVideo: ->
     query = new Parse.Query TL.Models.VideoObject
+    query.equalTo "status", "approved"
     query.get @options.id,
       success: @render
       error: @showError
@@ -25,6 +26,7 @@ class TL.Views.VideoPage extends Backbone.View
   findRelated: ->
     query = new Parse.Query TL.Models.VideoObject
     query.equalTo "country_name", @model.get 'country_name'
+    query.equalTo "status", "approved"
     # TODO: structure query so it rejects main video on the server
     query.find
       success: @renderRelated
