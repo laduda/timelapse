@@ -32,7 +32,7 @@ class TL.Routers.Main extends Backbone.Router
 		$('#content').empty()
 		@videoPage = new TL.Views.VideoPage
 			el: '#content'
-			id:id
+			id: id
 			
 	index: ->
 		

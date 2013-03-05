@@ -6,7 +6,11 @@
 #= require ./lib/underscore-min
 #= require ./lib/backbone
 #= require ./lib/parse-1.1.15
+#= require ./lib/moment
+#= require ./lib/helpers
+
 # require ./lib/backbone-parse
+
 
 
 # Backbone
