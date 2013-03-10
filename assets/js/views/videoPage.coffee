@@ -1,6 +1,7 @@
 class TL.Views.VideoPage extends Backbone.View
   initialize: (options)->
     _.bindAll @
+    @id = options.id
     @template = Handlebars.templates['home/videoPage']
     @findVideo()
   
@@ -34,6 +35,8 @@ class TL.Views.VideoPage extends Backbone.View
     
   render: (model)->
     @model = model
-    @$el.html @template @model.attributes
+    json = model.toJSON()
+    json[json.video_type] = true
+    @$el.html @template json
     @findRelated()
 

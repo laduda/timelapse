@@ -11,8 +11,12 @@
 				<h3 class="videoname">{{city_name}}, {{country_name}}</h3>
 				<h4>Population: {{population}}  Age: {{age}}</h4>
 				<div class="videoWrapper">
-					<iframe width="100%" height="auto" src="http://www.youtube.com/embed/ZQhcJi3qiR0?rel=0" frameborder="0" 
-					allowfullscreen=""></iframe>
+					{{#if vimeo}}
+					<iframe src="http://player.vimeo.com/video/{{VideoID}}" width="100%" height="auto" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+					{{/if}}
+					{{#if youtube}}
+					<iframe width="100%" height="auto" src="http://www.youtube.com/embed/{{VideoID}}" frameborder="0" allowfullscreen></iframe>
+					{{/if}}
 				</div>
 				<h4>By {{author}}</h4>
 				<div class="fb-like" data-send="true" data-width="450" data-show-faces="false" style="margin-bottom: 5px"></div>

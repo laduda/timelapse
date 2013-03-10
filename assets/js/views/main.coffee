@@ -20,6 +20,8 @@ class TL.Views.Main extends Backbone.View
 		
 	render: ->
 		# ($ "#popular ul").html HandlebarsTemplates['home/thumbnails']({videos:@collection})
+		@thumbnails = new TL.Views.VideoThumbnails
+			el: '#popular'		
 		@initModals()
 		@
 
