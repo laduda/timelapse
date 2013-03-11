@@ -198,6 +198,40 @@ Rest
 	margin-top: -6px;
 }
 
+.thumbnail img {
+	height: 140px;
+}
+
+.related img {
+	height: 160px;
+}
+
+.thumbnail a .play_button {
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -53px;
+	margin-top: -20px;
+	opacity: 0;
+}
+
+.play_button {
+cursor: pointer;
+border-top: 1px solid rgba(255,255,255,0.5);
+box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+background-color: #2e988d;
+border-radius: 15px;
+padding: 12px 22px;
+color: white;
+text-shadow: -1px -1px 1px rgba(0,0,0,0.5);
+font-size: 15px;
+display: inline-block;
+-webkit-transition: all 0.2s ease-out;
+-moz-transition: all 0.2s ease-out;
+-o-transition: all 0.2s ease-out;
+transition: all 0.2s ease-out;
+}
 
 .first-btn {
 	height:150px;

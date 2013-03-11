@@ -1,6 +1,6 @@
 class TL.Views.VideoThumbnail extends Backbone.View
   tagName: 'li'
-  className: 'span3'
+  className: 'span3 thumbnails'
 
   initialize: () ->
     _.bindAll @
