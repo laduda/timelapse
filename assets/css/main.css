@@ -198,29 +198,42 @@ Rest
 	margin-top: -6px;
 }
 
+.thumbnail {
+	position: relative;
+}
+
 .thumbnail img {
 	height: 140px;
+	
 }
 
 .related img {
 	height: 160px;
 }
 
+.thumbnail a {
+	display: block;
+}
+
+.thumbnail:hover .play_button {
+	opacity: 1;
+	bottom: 57%;
+}
+
 .thumbnail a .play_button {
 	display: block;
 	position: absolute;
-	top: 100%;
-	left: 50%;
-	margin-left: -53px;
+	left: 38%;
 	margin-top: -20px;
 	opacity: 0;
 }
+
 
 .play_button {
 cursor: pointer;
 border-top: 1px solid rgba(255,255,255,0.5);
 box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-background-color: #2e988d;
+background-color: #4EBDE5;
 border-radius: 15px;
 padding: 12px 22px;
 color: white;
