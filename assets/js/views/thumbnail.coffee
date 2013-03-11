@@ -8,7 +8,6 @@ class TL.Views.VideoThumbnail extends Backbone.View
     @render()
     
   render: ->
-    console.log @model
     json = @model.toJSON()
     json[json.video_type] = true
     @$el.html @template json

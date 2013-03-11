@@ -1,6 +1,6 @@
 class TL.Views.VideoRelated extends Backbone.View
   tagName: 'li'
-  className: 'span4 related'
+  className: 'span3 related'
 
   initialize: () ->
     _.bindAll @

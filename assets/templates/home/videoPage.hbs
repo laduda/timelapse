@@ -7,8 +7,8 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 		<div class="row video-page"> 
-			<div class="span8">
-				<h3 class="videoname">{{city_name}}, {{country_name}}</h3>
+			<div class="span9">
+				<h3 class="videoname">{{city_name}}{{capital}}, {{country_name}}</h3>
 				<h4>Population: {{population}}  Age: {{age}}</h4>
 				<div class="videoWrapper">
 					{{#if vimeo}}
@@ -37,7 +37,7 @@
 			    
 			</div><!--end main area-->	
 <!--to get thumbnail  http://vimeo.com/api/v2/video/ID_VIDEO.xml  -->
-<aside class="span4">
+<aside class="span3">
 <h3>Related Videos</h3>
 <h5><br></h5>
 	<ul id="related" class="thumbnails"></ul>

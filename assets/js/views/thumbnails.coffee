@@ -15,7 +15,7 @@ class TL.Views.VideoThumbnails extends Backbone.View
   getVideos: ->
     query = new Parse.Query TL.Models.VideoObject
     query.equalTo "status", "approved"
-    query.limit(8)
+    query.limit(32)
     # limit here
     # TODO: structure query so it rejects main video on the server
     query.find
