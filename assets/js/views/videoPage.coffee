@@ -3,17 +3,21 @@ class TL.Views.VideoPage extends Backbone.View
     _.bindAll @
     @id = options.id
     @template = Handlebars.templates['home/videoPage']
+    @showLoader()
     @findVideo()
   
   renderRelated: (modelАrr)->
-    $relEl = @$el.find "#related"
+    $relEl = @$ "#related"
+    $relEl.empty()
     _(modelАrr).each (model)->
       # do not rednder main video 
       if model.id != @model.id
         relatedVideo = new TL.Views.VideoRelated
           model: model
+        relatedVideo.on 'clicked', @renderMainVideo, @
         $relEl.append relatedVideo.el
     , @
+
   findVideo: ->
     query = new Parse.Query TL.Models.VideoObject
     query.equalTo "status", "approved"
@@ -32,11 +36,17 @@ class TL.Views.VideoPage extends Backbone.View
     query.find
       success: @renderRelated
       error: @showError
-    
+  
+
+  renderMainVideo: (model)->
+    @model = model
+    @mainVideo.render @model
+    @findRelated()
+
   render: (model)->
     @model = model
-    json = model.toJSON()
-    json[json.video_type] = true
-    @$el.html @template json
-    @findRelated()
+    @$el.html @template {}
+    @mainVideo = new TL.Views.MainVideo
+       el: @$ '#mainvideo'
+    @renderMainVideo model
 

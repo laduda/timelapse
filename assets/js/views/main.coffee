@@ -12,11 +12,16 @@ class TL.Views.Main extends Backbone.View
 		@remove()
 	events:
 		'click .share': 'share'
+		'click .accountForm' : 'signup'
 		
 	initModals: ->
 		shareForm = new TL.Views.Modals.Share()
 		@$share = $ shareForm.el
 		@$('.modals').append @$share
+
+		signupForm = new TL.Views.Modals.SignUp()
+		@$signup = $ signupForm.el
+		@$('.modals').append @$signup
 		
 	render: ->
 		# ($ "#popular ul").html HandlebarsTemplates['home/thumbnails']({videos:@collection})
@@ -24,6 +29,10 @@ class TL.Views.Main extends Backbone.View
 			el: '#popular'		
 		@initModals()
 		@
+
+	signup: (event)->
+		event.preventDefault()
+		@$signup.modal('show')
 
 	share: (event)->
 		event.preventDefault()

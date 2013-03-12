@@ -3,7 +3,7 @@ class TL.Routers.Main extends Backbone.Router
 		'' : 'index'
 		'explore': 'explore'
 		'explore/:area' : 'explore'
-		'video/:id': 'videoPage'
+		'video/:name/:id': 'videoPage'
 		'tutorials': 'tutorials'
 		'about': 'about'
 		
@@ -27,7 +27,7 @@ class TL.Routers.Main extends Backbone.Router
 		@about = new TL.Views.About
 			el: '#content'
 	
-	videoPage: (id) ->
+	videoPage: (name, id) ->
 		#show the view for video with id:#id
 		$('#content').empty()
 		@videoPage = new TL.Views.VideoPage

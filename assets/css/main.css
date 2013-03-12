@@ -4,6 +4,12 @@
 Header
 ****************/
 
+
+#content {
+  min-height: 419px;
+}
+
+
 a {
 	color: #289BDE;
 }
@@ -100,11 +106,12 @@ Video Wrapper
 	margin-top: -10px;
 }
 
+
+
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
-	height: 0;
 }
 .videoWrapper iframe {
 	position: absolute;
@@ -120,6 +127,7 @@ Video Wrapper
 }
 
 .video-page {
+  min-height: 419px;
 	border-bottom: 1px solid #99cccc;	
 }
 
