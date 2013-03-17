@@ -1,28 +1,28 @@
 class TL.Views.Explore extends Backbone.View
 	initialize: ->
 		_.bindAll @
-		@loadAreas()
+#		@loadAreas()
 		@markers = new TL.Collections.VideoObjects
 		@markers.fetch()
 		@markers.on 'reset', @renderMarkers, @
-		@area = @options.area || null
-		if @area
-			area = @area
-			@area_object = _.find(@areas, (a) ->
-				if a.id == area
-					a
-			)
+#		@area = @options.area || null
+#		if @area
+#			area = @area
+#			@area_object = _.find(@areas, (a) ->
+#				if a.id == area
+#					a
+#			)
 		@template = Handlebars.templates['explore/index']
 		@render()
 		$ =>
-		  @myLatlng = new google.maps.LatLng(@area_object.la, @area_object.lo)
+		  @myLatlng = new google.maps.LatLng(27.371767, 19.335938)   #(@area_object.la, @area_object.lo)
 		  @mapOptions =
-		    zoom: 4
+		    zoom: 2
 		    center: @myLatlng
 		    mapTypeId: google.maps.MapTypeId.ROADMAP
 		  @map = new google.maps.Map(document.getElementById("map"), @mapOptions)
 	render: ->
-		@$el.html @template({area:@area})
+		@$el.html @template#({area:@area})
 		
 	renderMarkers: ->
 		$ =>
@@ -43,7 +43,7 @@ class TL.Views.Explore extends Backbone.View
 				Backbone.history.navigate("video/city/#{m.id}", {trigger: true})
 		
 		
-	loadAreas: ->
+#	loadAreas: ->
 		@areas = [
 		  id: "africa"
 		  color: "#24f34a"
