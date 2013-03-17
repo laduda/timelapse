@@ -15,7 +15,7 @@ class TL.Views.Explore extends Backbone.View
 		@template = Handlebars.templates['explore/index']
 		@render()
 		$ =>
-		  @myLatlng = new google.maps.LatLng(27.371767, 19.335938)   #(@area_object.la, @area_object.lo)
+		  @myLatlng = new google.maps.LatLng(36.879621, 15.46875)   #(@area_object.la, @area_object.lo)
 		  @mapOptions =
 		    zoom: 2
 		    center: @myLatlng
