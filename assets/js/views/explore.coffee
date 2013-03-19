@@ -5,6 +5,7 @@ class TL.Views.Explore extends Backbone.View
 		@markers = new TL.Collections.VideoObjects
 		@markers.fetch()
 		@markers.on 'reset', @renderMarkers, @
+		@renderPopular
 #		@area = @options.area || null
 #		if @area
 #			area = @area
@@ -23,7 +24,11 @@ class TL.Views.Explore extends Backbone.View
 		  @map = new google.maps.Map(document.getElementById("map"), @mapOptions)
 	render: ->
 		@$el.html @template#({area:@area})
-		
+	
+	renderPopular: ->
+    @thumbnails = new TL.Views.VideoThumbnails
+     el: '#popular'
+	  
 	renderMarkers: ->
 		$ =>
 			@markers.each(@putMarker, @)
@@ -41,7 +46,6 @@ class TL.Views.Explore extends Backbone.View
 			)
 			google.maps.event.addListener marker, "click", ->
 				Backbone.history.navigate("video/city/#{m.id}", {trigger: true})
-		
 		
 #	loadAreas: ->
 		@areas = [
