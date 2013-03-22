@@ -2,7 +2,7 @@ class TL.Routers.Main extends Backbone.Router
 	routes:
 		'' : 'index'
 		'explore': 'explore'
-		'explore/:area' : 'explore'
+#		'explore/:area' : 'explore'
 		'video/:name/:id': 'videoPage'
 		'tutorials': 'tutorials'
 		'about': 'about'
@@ -39,6 +39,5 @@ class TL.Routers.Main extends Backbone.Router
 	start: ->
 		Backbone.history.start
 			pushState: true
-			
 
 		

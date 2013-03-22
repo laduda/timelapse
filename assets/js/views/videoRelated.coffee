@@ -15,6 +15,7 @@ class TL.Views.VideoRelated extends Backbone.View
     event.preventDefault()
     console.log @model.id
     @trigger 'clicked', @model
+    @$el.html Handlebars.templates['home/main_video'] json
 
   render: ->
     json = @model.toJSON()

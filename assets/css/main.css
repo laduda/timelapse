@@ -89,6 +89,23 @@ Navigation
 }
 
 
+.explore-btn {
+  background-color: #5AB6E7;
+  background-image: url('../../public/images/explore-btn.png');
+  display:block;
+  width: 185px;
+  height: 44px;
+  
+}
+
+.share-btn {
+  background-color: #91CA6C;
+  background-image: url('../../public/images/share-btn.png');
+  display:block;
+  width: 227px;
+  height: 44px;
+}
+
 /****************
 Video Wrapper
 ****************/
@@ -259,6 +276,8 @@ display: inline-block;
 transition: all 0.1s ease-out;
 }
 
+
+
 .first-btn {
 	height:150px;
 	padding: 10px;
@@ -316,7 +335,7 @@ transition: all 0.1s ease-out;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 2px 0,rgba(255, 255, 255, 0.6) 0 1px 0 inset;
 	-o-box-shadow: rgba(0,0,0,0.4) 0 1px 2px 0,rgba(255,255,255,0.6) 0 1px 0 inset;
 	box-shadow: rgba(0, 0, 0, 0.4) 0 1px 2px 0,rgba(255, 255, 255, 0.6) 0 1px 0 inset;
-}
+}*/
 
 
 #mapdiv {
