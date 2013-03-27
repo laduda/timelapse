@@ -142,9 +142,10 @@ Video Wrapper
 
 .video-page {
   min-height: 419px;
-	border-bottom: 1px solid #99cccc;	
 }
-
+.border {
+  border-bottom: 1px solid #99cccc;	
+}
 
 
 
