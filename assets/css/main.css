@@ -90,20 +90,17 @@ Navigation
 
 
 .explore-btn {
-  background-color: #5AB6E7;
-  background-image: url('../../public/images/explore-btn.png');
+  background-image: url('/images/explore-btn.png');
   display:block;
-  width: 185px;
-  height: 44px;
-  
+}
+
+.explore-btn:hover {
+  background-color: #2486c6;
 }
 
 .share-btn {
-  background-color: #91CA6C;
-  background-image: url('../../public/images/share-btn.png');
+  background-image: url('/images/share-btn.png');
   display:block;
-  width: 227px;
-  height: 44px;
 }
 
 /****************
@@ -170,8 +167,80 @@ Footer
 
 
 
+
+
+.first-btn {
+  background-image: url('/images/explore-banner.png');
+  display:block;
+  width: 250px;
+  height: 160px;
+  margin-right: 75px;
+  margin-left: 0px;
+  
+}
+
+.first-btn:hover {
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+
+
+.first-btn img {
+  opacity:0.8;
+  filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+
+.second-btn {
+  background-image: url('/images/share-banner.png');
+  display:block;
+  width: 250px;
+  height: 160px;
+  margin-right: 75px;
+}
+
+.second-btn:hover {
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+
+.second-btn img {
+  opacity:0.8;
+  filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.third-btn {
+  background-image: url('/images/learn-banner.png');
+  display:block;
+  width: 250px;
+  height: 160px;
+}
+
+.third-btn:hover {
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+
+.third-btn img {
+  opacity:0.8;
+  filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
 .footer-btntext {
 	margin-top: 15px;
+}
+
+.btn {
+
 }
 
 /****************
@@ -197,7 +266,10 @@ Rest
 	margin-top: 10px;
 }
 
-
+.footer-btntext {
+  display: inline-block;
+  margin-top: 100px;
+}
 
 
 .footer {
@@ -278,7 +350,10 @@ transition: all 0.1s ease-out;
 
 
 
-.first-btn {
+
+
+
+/*.first-btn {
 	height:150px;
 	padding: 10px;
 	-moz-border-radius: 5px;
