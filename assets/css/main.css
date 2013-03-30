@@ -283,6 +283,17 @@ Rest
 	border-bottom: 1px solid #99cccc;
 }
 
+.about {
+  background-color: #EFFFFF;
+}
+
+.about p {
+  padding: 0px 10px;
+}
+
+.about h3 {
+  padding: 0px 10px;
+}
 
 .footer-btns {
 	margin-top: 0px;
