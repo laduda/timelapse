@@ -42,6 +42,15 @@ img {
 
 .navbar {
 	margin-bottom: -20px;
+	margin-right: 2px;
+}
+
+.signup {
+  margin-right: 2px;
+}
+
+.fb {
+  margin-right: -11px;
 }
 
 #header {
@@ -92,6 +101,8 @@ Navigation
 .explore-btn {
   background-image: url('/images/explore-btn.png');
   display:block;
+  width: 147px;
+ 
 }
 
 .explore-btn:hover {
@@ -101,6 +112,8 @@ Navigation
 .share-btn {
   background-image: url('/images/share-btn.png');
   display:block;
+  width: 188px;
+  
 }
 
 /****************
@@ -177,6 +190,12 @@ Footer
   height: 160px;
   margin-right: 75px;
   margin-left: 20px;
+  border: 1px solid #bbbbbb;
+  -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+      -o-transition: background-position 0.1s linear;
+         transition: background-position 0.1s linear;
+  background-color: #58b8e8;
   
 }
 
@@ -201,6 +220,12 @@ Footer
   width: 250px;
   height: 160px;
   margin-right: 75px;
+  border: 1px solid #bbbbbb;
+  -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+      -o-transition: background-position 0.1s linear;
+         transition: background-position 0.1s linear;
+  background-color: #92cb6c;
 }
 
 .second-btn:hover {
@@ -260,11 +285,11 @@ Rest
 
 
 .footer-btns {
-	margin-top: 17px;
+	margin-top: 0px;
 }
 
 .banner-footer {
-	margin-top: 10px;
+	margin-top: 25px;
 }
 
 .footer-btntext {
@@ -304,6 +329,7 @@ Rest
 
 .thumbnail {
 	position: relative;
+	height: 225px;
 }
 
 .thumbnail img {
@@ -315,6 +341,10 @@ Rest
 
 .thumbnail a {
 	display: block;
+}
+
+.by {
+  margin-top: 0px;
 }
 
 .thumbnail:hover .play_button {
