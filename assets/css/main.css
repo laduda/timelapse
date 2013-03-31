@@ -170,9 +170,10 @@ input {
 	width: 97%;
 }
 
-.share-form {
+/*.share-form {
 	color: #006fcc;
-}
+}*/
+
 
 
 /****************
@@ -273,6 +274,17 @@ Footer
 Rest
 ****************/
 
+.modal-body {
+  background-color: #92cb6c;
+}
+
+/*.modal-header {
+  background-color: #66bd58;
+}*/
+
+.modal-footer {
+  background-color: #66bd58;
+}
 .popular {
 	border-bottom: 1px solid #99cccc;
 	margin-top: 40px;
