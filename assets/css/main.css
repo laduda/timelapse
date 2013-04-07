@@ -148,6 +148,31 @@ Video Wrapper
 	height: 100%;
 }
 
+.videoname {
+  display: inline-block;
+  margin-bottom: -5px;
+}
+
+
+
+.backToMap {
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 1.2em;
+  }
+  
+a.backToMap {
+  text-decoration: none;
+}
+  
+.backToMap img {
+  margin-bottom: 8px;
+  margin-right: -45px;
+  margin-left: 10px;
+}
+
 .about-aftervideo {
 	border-bottom: 1px solid #99cccc;
 	padding-bottom: 15px;
