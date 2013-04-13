@@ -191,7 +191,7 @@ a.backToMap {
 Share Form
 ****************/
 
-input {
+input, select {
 	width: 97%;
 }
 
@@ -299,16 +299,16 @@ Footer
 Rest
 ****************/
 
-.modal-body {
+/*.modal-body {
   background-color: #92cb6c;
 }
 
-/*.modal-header {
+  .modal-header {
   background-color: #66bd58;
 }*/
 
-.modal-footer {
-  background-color: #66bd58;
+.modal-footer, .modal-header{
+  background-color: #92cb6c;
 }
 .popular {
 	border-bottom: 1px solid #99cccc;

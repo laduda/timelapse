@@ -1,7 +1,7 @@
 class TL.Views.Modals.Share extends Backbone.View
 	className: 'share-form modal hide fade'
 	events:
-		'click #submit':'submit'
+		'click button':'submit'
 		'change input[name]':'setObject'
 		
 	initialize: ->
