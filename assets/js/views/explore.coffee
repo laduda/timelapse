@@ -2,7 +2,11 @@ class TL.Views.Explore extends Backbone.View
 	initialize: ->
 		_.bindAll @
 #		@loadAreas()
-		@markers = new TL.Collections.VideoObjects
+		Markers = Parse.Collection.extend(
+		  model: TL.Models.VideoObject
+		  query: (new Parse.Query(TL.Models.VideoObject)).limit(500)
+		)
+		@markers = new Markers()
 		@markers.fetch()
 		@markers.on 'reset', @renderMarkers, @
 		@renderPopular
@@ -16,7 +20,7 @@ class TL.Views.Explore extends Backbone.View
 		@template = Handlebars.templates['explore/index']
 		@render()
 		$ =>
-		  @myLatlng = new google.maps.LatLng(36.879621, 15.46875)   #(@area_object.la, @area_object.lo)
+		  @myLatlng = new google.maps.LatLng(30.044420, 31.235712)   #(@area_object.la, @area_object.lo)
 		  @mapOptions =
 		    zoom: 2
 		    center: @myLatlng
