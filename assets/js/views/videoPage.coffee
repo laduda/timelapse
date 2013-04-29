@@ -5,7 +5,7 @@ class TL.Views.VideoPage extends Backbone.View
     @template = Handlebars.templates['home/videoPage']
     @showLoader()
     @findVideo()
-  
+    @renderPopular
   renderRelated: (modelАrr)->
     $relEl = @$ "#related"
     $relEl.empty()
@@ -16,6 +16,10 @@ class TL.Views.VideoPage extends Backbone.View
           model: model
         relatedVideo.on 'clicked', @renderMainVideo, @
         $relEl.append relatedVideo.el
+      else 
+        renderPopular: ->
+        @thumbnails = new TL.Views.VideoThumbnails
+          el: '#popular'
     , @
 
   findVideo: ->

@@ -53,6 +53,17 @@ img {
   margin-right: -11px;
 }
 
+.fb:hover {
+	-webkit-transform: scale(1.1);
+}
+.twitter {
+	margin: -1px -20px 0px -10px;
+}
+
+.twitter:hover {
+	-webkit-transform: scale(1.1);
+}
+
 #header {
 	margin-bottom: -8px;
 }
@@ -181,6 +192,10 @@ a.backToMap {
 .video-page {
   min-height: 419px;
 }
+ul#related.thumbnails{
+	margin-top: 33px;
+}
+
 .border {
   border-bottom: 1px solid #99cccc;	
 }
