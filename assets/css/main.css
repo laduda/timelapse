@@ -194,6 +194,9 @@ a.backToMap {
 }
 ul#related.thumbnails{
 	margin-top: 33px;
+	max-height: 960px;
+	overflow-y: auto;
+	margin-bottom: 33px;
 }
 
 .border {
