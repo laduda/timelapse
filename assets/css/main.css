@@ -3,7 +3,12 @@
 /****************
 Header
 ****************/
-
+body {
+ background-image: -webkit-linear-gradient(#ffffff,#EFFFFE 30%);
+ background-image: -moz-linear-gradient(#ffffff,#EFFFFE 30%);
+ background-image: -o-linear-gradient(#ffffff,#EFFFFE 30%);
+ background-image: linear-gradient(#ffffff,#EFFFFE 30%);	
+}
 
 #content {
   min-height: 912px;
@@ -396,6 +401,8 @@ Rest
 .thumbnail {
 	position: relative;
 	height: 225px;
+	background-color: white;
+	border-radius: 3px;
 }
 
 .thumbnail img {
