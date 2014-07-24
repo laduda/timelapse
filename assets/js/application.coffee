@@ -21,9 +21,3 @@
 #= require_tree ./views
 #= require_tree ./routers
 #= require ./init
-
-# Maps
-#= require ./lib/ammap/ammap
-#= require ./lib/ammap/maps/world_low
-#= require ./lib/ammap/maps/world_low_contents
-#= require ./lib/ammap/kickoff
