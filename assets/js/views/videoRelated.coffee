@@ -1,6 +1,6 @@
 class TL.Views.VideoRelated extends Backbone.View
   tagName: 'li'
-  className: 'span3 related'
+  className: 'related'
 
   events:
     'click':'openView'
