@@ -2,7 +2,7 @@
 /**
  * Module dependencies.
  */
-require('coffee-script');
+require('coffee-script/register');
 
 var express = require('express')
   , http = require('http')
@@ -22,9 +22,7 @@ app.configure(function(){
   app.use(app.router);
   app.use(require('connect-assets')());
   app.use(express.static(path.join(__dirname, 'public')));
-	app.use("/templates.js", hbs(__dirname + "/assets/templates", {
-	  exts: ['hbs','handlebars']
-	}));
+	app.use("/templates.js", hbs(__dirname + "/assets/templates", { exts: ['hbs','handlebars'] }));
 });
 
 require('./routes')(app);

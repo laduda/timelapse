@@ -9,14 +9,15 @@
     "express": "3.0.6",
     "jade": "*",
     "connect-assets": "~2.3.3",
-    "coffee-script": "~1.4.0",
     "connect-handlebars": "0.0.5"
-  },
-  "development": {
-    "node-dev": "~0.2.9"
   },
   "engines": {
     "node": "0.8.x",
-    "npm":  "1.1.x"
+    "npm": "1.1.x"
+  },
+  "devDependencies": {
+    "coffee-script": "~>1.9.3",
+    "gulp": "^3.9.0",
+    "node-dev": "~0.2.9"
   }
 }
