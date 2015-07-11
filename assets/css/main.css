@@ -105,6 +105,14 @@ a.share {
   color: #FFF;
 }
 
+.navbar-inverse .navbar-nav>li>a.share {
+  background-color: rgba(53, 60, 131, 1);
+}
+
+.navbar-inverse .navbar-nav>li>a.share:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .facebook-icon, .twitter-icon {
   text-indent: -9999px;
 }
