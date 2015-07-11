@@ -168,14 +168,14 @@ button.btn.dropdown-toggle.discover.navbar-toggle {
   font-size: 1.4em;
 }
 
-a.accountForm{
+a.account-form{
   padding: 3px 20px;
   font-size: 1em;
   background-color: rgba(51, 57, 124, 1);
 }
 
-.navbar-inverse .navbar-nav > li > a.accountForm:hover, 
-.navbar-inverse .navbar-nav > li > a.accountForm:focus:hover {
+.navbar-inverse .navbar-nav > li > a.account-form:hover, 
+.navbar-inverse .navbar-nav > li > a.account-form:focus:hover {
   background-color: rgba(55, 63, 153, 1);
 }
 
