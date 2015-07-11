@@ -1,6 +1,6 @@
 class TL.Views.Explore extends Backbone.View
 	initialize: ->
-		_.bindAll @
+		_.bindAll @, 'renderMarkers', 'putMarker'
 #		@loadAreas()
 		Markers = Parse.Collection.extend(
 		  model: TL.Models.VideoObject

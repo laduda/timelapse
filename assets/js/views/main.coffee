@@ -12,7 +12,7 @@ class TL.Views.Main extends Backbone.View
 		@remove()
 	events:
 		'click .share': 'share'
-		'click .accountForm' : 'signup'
+		'click .account-form' : 'signup'
 		
 	initModals: ->
 		shareForm = new TL.Views.Modals.Share()
@@ -44,5 +44,4 @@ class TL.Views.Main extends Backbone.View
 		#marker:
 			#marker with coordinates retreived from address
 			#generate event on marker click: Go to singe video page
-			
-			
+		
