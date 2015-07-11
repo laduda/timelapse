@@ -1,5 +1,5 @@
 class TL.Views.Modals.SignUp extends Backbone.View
-	className: 'share-form modal hide fade'
+	className: 'share-form modal'
 #	events:
 		
 	initialize: ->

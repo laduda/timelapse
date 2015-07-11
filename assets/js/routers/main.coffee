@@ -1,7 +1,6 @@
 class TL.Routers.Main extends Backbone.Router
 	routes:
-		'' : 'index'
-		'explore': 'explore'
+		'' : 'explore'
 #		'explore/:area' : 'explore'
 		'video/:name/:id': 'videoPage'
 		'tutorials': 'tutorials'

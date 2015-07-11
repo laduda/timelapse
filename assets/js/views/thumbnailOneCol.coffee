@@ -1,6 +1,6 @@
-class TL.Views.VideoThumbnail extends Backbone.View
+class TL.Views.VideoThumbnailOneCol extends Backbone.View
   tagName: 'li'
-  className: 'col-sm-6 col-md-4 col-lg-3'
+  className: ''
 
   initialize: () ->
     _.bindAll @, 'render'

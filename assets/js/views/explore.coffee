@@ -1,6 +1,6 @@
 class TL.Views.Explore extends Backbone.View
 	initialize: ->
-		_.bindAll @
+		_.bindAll @, 'renderMarkers', 'putMarker'
 #		@loadAreas()
 		Markers = Parse.Collection.extend(
 		  model: TL.Models.VideoObject
@@ -10,22 +10,28 @@ class TL.Views.Explore extends Backbone.View
 		@markers.fetch()
 		@markers.on 'reset', @renderMarkers, @
 		@renderPopular
-#		@area = @options.area || null
-#		if @area
-#			area = @area
-#			@area_object = _.find(@areas, (a) ->
-#				if a.id == area
-#					a
-#			)
 		@template = Handlebars.templates['explore/index']
 		@render()
 		$ =>
-		  @myLatlng = new google.maps.LatLng(30.044420, 31.235712)   #(@area_object.la, @area_object.lo)
+		  @LatLang = new (google.maps.LatLng)(36.393156, 25.461509)   #(@area_object.la, @area_object.lo)
 		  @mapOptions =
 		    zoom: 2
-		    center: @myLatlng
+		    scrollwheel: false
+		    overviewMapControl: true
+		    streetViewControl: false
+		    zoomControl: true
+		    zoomControlOptions: position: google.maps.ControlPosition.RIGHT_CENTER
+		    panControl: true
+		    panControlOptions: position: google.maps.ControlPosition.RIGHT_CENTER
+		    center: new (google.maps.LatLng)(30.448674, -4.921875)
 		    mapTypeId: google.maps.MapTypeId.ROADMAP
 		  @map = new google.maps.Map(document.getElementById("map"), @mapOptions)
+			google.maps.event.addDomListener window, 'resize', ->
+  			center = map.getCenter()
+  			google.maps.event.trigger map, 'resize'
+  			map.setCenter center
+
+
 	render: ->
 		@$el.html @template#({area:@area})
 	
@@ -42,60 +48,23 @@ class TL.Views.Explore extends Backbone.View
 			lo = m.get('LatLang').longitude
 			name = m.get('city_name')
 			myLatlng = new google.maps.LatLng(la, lo)
+			pin =
+				url: 'images/pin3.png'
+				scaledSize: new (google.maps.Size)(23, 33) 
+				# scaledSize: new (google.maps.Size)(23, 15)
 			marker = new google.maps.Marker(
 		    position: myLatlng
 		    map: @map
 		    title: name
+		    icon: pin
 			animation: google.maps.Animation.DROP
 			)
       
 			google.maps.event.addListener marker, "click", ->
 				Backbone.history.navigate("video/city/#{m.id}", {trigger: true})
+
 		      
-#	loadAreas: ->
-		@areas = [
-		  id: "africa"
-		  color: "#24f34a"
-		  passZoomValuesToTarget: true
-		  url: "/explore/africa"
-		  la: 3.864255
-		  lo: 29.882813
-		,
-		  id: "asia"
-		  color: "#fcff00"
-		  passZoomValuesToTarget: true
-		  url: "/explore/asia"
-		  la: 42.811522
-		  lo: 110.390625
-		,
-		  id: "australia"
-		  color: "#ef820d"
-		  passZoomValuesToTarget: true
-		  url: "/explore/australia"
-		  la: -25.274398
-		  lo: 133.775136
-		,
-		  id: "europe"
-		  color: "#ff6666"
-		  passZoomValuesToTarget: true
-		  url: "/explore/europe"
-		  la: 50.075538
-		  lo: 14.437801
-		,
-		  id: "north_america"
-		  color: "#f67200"
-		  passZoomValuesToTarget: true
-		  url: "/explore/north_america"
-		  la: 51.253775
-		  lo: -85.323214
-		,
-		  id: "south_america"
-		  color: "#e562f2"
-		  passZoomValuesToTarget: true
-		  url: "/explore/south_america"
-		  la: -13.068777
-		  lo: -57.128906
-		]
+
 		
 		
 		

@@ -1,74 +1,89 @@
 extends layout
 
 block content
-	div#TL.container
-		.navbar
-			.navbar-inner
-				#clouds.pull-left
-					img(src='/images/clouds.gif', width="720", height="42", alt="Clouds image")
-				ul.nav.pull-right
-					li.fb
-						a(href='http://www.facebook.com/UrbanTimelapse', title='Visit UrbanTimelapse Facebook Page', target='_blank')
-							img.facebookIcon(src='/images/facebook.png', width='20', height='20', alt='Facebook Icon')
-					li.twitter
-						a(href='http://www.twitter.com/UrbanTimelapse', title='Visit UrbanTimelapse Twitter Page', target='_blank')
-							img(src='/images/twitter.png', width='18', height='18', alt='Visit UrbanTimelapse Twitter Page')
-					li.signu
-						a.accountForm(href='', title="Sign Up") Sign Up
-							
-							
-							
-							
-		#header
-			.row
-				.span5
-					h1
-						a(href='/')
-							img(src='images/Logo.gif', width='325', height='112', alt='Urban Timelapse. Discover the World City by City Through The Lens of Timelapse Photography', title='Return to UrbanTimelapse Home Page')
-				.cta-btns.span6.pull-right
-					a.share.pull-right.button.btn.btn-large.btn-success.share-btn(href='search.html', title='Share Timelapse Video') Share Timelapse Video
-					a.pull-right.button.btn.btn-large.btn-primary.explore-btn(href='/explore', title='Explore the world') Explore the World	
-		ul.nav.nav-tabs
-			.skyLine
-				img(src='images/SkyLine1.png', width='778', height='34', alt='SkyLine1')
-			li.nav
-				a(href='/about', title='About UrbanTimelapse') About
-			li.nav
-					a(href='/tutorials', title='Learn Timelapse Tricks') Tutorials
-					
-					
-					
-		#content			
-			h3 Featured Timelapse
-			.videoWrapper
-				iframe(src='http://player.vimeo.com/video/55945051?title=0&byline=0&color=ffffff', width='500', height='213', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
-				
-			h3 Rio De Janeiro, Brazil
-			h4 Population: 6 323 037. Age: 448 years old.
-					
-			h3.popular Popular Timelapse Videos
-					
-					
-			
-			#popular
-				ul.thumbnails
+  .navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+    .container-fluid
+        .navbar-header.col-sm-3.col-md-3
+          button.btn.dropdown-toggle.discover.navbar-toggle(type='button', data-toggle='dropdown')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          ul.dropdown-menu.col-xs-12(role='menu')
+            ul.list-inline.sign
+              li
+                a.share(href='#', title='Share Timelapse Video')
+                  span.glyphicon.glyphicon-cloud-upload(aria-hidden='true')
+                  |Upload      
+              li.signup
+                a.account-form(href='#', title="Sign Up") Sign Up
+            li.divider
+            li
+              a(href='/tutorials') Timelapse Tutorials
+            li
+              a(href='#') Timelapse Tools
+            li
+              a(href='/about') About
+            li.divider
+            li
+              a.share(href='#') Share Timelapse
 
-					
-		.banner-footer.row
-			.footer-btns
-				a(href='/explore', title='Explore the World')
-					button.span4.btn.btn-large.btn-primary.first-btn.exploreIcon
-						div.footer-btntext
-							| Explore the World
-				a.share(href='home/share_form', title='Upload Timelapse')
-					button.span4.btn.btn-large.btn-success.second-btn.shareIcon
-						div.footer-btntext
-							| Upload Timelapse
-				a(href='/tutorials', title='Learn Timelapse Tricks')
-					button.span4.btn.btn-large.btn-info.third-btn.learnIcon
-						div.footer-btntext
-							| Learn Timelapse Tricks
-			div.clearfix.footer.span12
-				h5
-					a(href='/index', title='Return to UrbanTimelapse Home Page') UrbanTimelapse
-			.modals
+          a.navbar-brand(rel-'home', href='/', title="Timelapse Videos of the World")
+            img(style='max-width:170px; margin-top: -5px; margin-left: -7px;', src='images/TimelapsrLogo.png')
+            // <small class="hidden-sm">Discover the World, share your story</small>         
+        .col-sm-3.col-md-3.col-lg-3.pull-right.uploadSignUp
+          .collapse.navbar-collapse
+            ul.nav.navbar-nav.pull-right
+              //
+                <li class="facebook-icon"><a href="https://www.facebook.com/UrbanTimelapse">Facebook</a></li>
+                <li><a  class="twitter-icon" href="https://twitter.com/UrbanTimelapse">Twitter</a></li>
+              li
+                a.share(href='#', title='Share Timelapse Video')
+                  span.glyphicon.glyphicon-cloud-upload(aria-hidden='true')
+                  |Upload      
+              li.signup
+                a.account-form(href='#', title="Sign Up") Sign Up
+          // /.nav-collapse
+        .col-md-5.col-sm-5
+          .row
+             .btn-group.col-sm-3.col-sm-pull-1.hidden-xs
+              button.btn.btn-default.dropdown-toggle.discover(type='button', data-toggle='dropdown')
+                | Explore
+                span.caret      
+              ul.dropdown-menu(role='menu')
+                li.nav
+                  a(href='/tutorials') Timelapse Tutorials       
+                li
+                  a(href='#') Timelapse Tools        
+                li.nav
+                  a(href='/about', title='About UrbanTimelapse') About        
+                li.divider        
+                li
+                  a.share(href='#') Share Timelapse  
+             .search-form.col-sm-9.col-xs-12
+               form(role='form')
+                 input#search(type='search', placeholder='City or Country')          
+          
+  #content      
+    h3.popular Popular Timelapse Videos 
+    
+
+  .banner-footer.row
+    //.footer-btns
+      a(href='/explore', title='Explore the World')
+        button.span4.btn.btn-large.btn-primary.first-btn.exploreIcon
+          div.footer-btntext
+            | Explore the World
+      a.share(href='home/share_form', title='Upload Timelapse')
+        button.span4.btn.btn-large.btn-success.second-btn.shareIcon
+          div.footer-btntext
+            | Upload Timelapse
+      a(href='/tutorials', title='Learn Timelapse Tricks')
+        button.span4.btn.btn-large.btn-info.third-btn.learnIcon
+          div.footer-btntext
+            | Learn Timelapse Tricks
+    div.footer
+      h5
+        a(href='/', title='Return to UrbanTimelapse Home Page') 
+          img(style='max-width:170px; margin-top: -5px; margin-bottom: 10px', src='images/TimelapsrLogoDark.png')
+    .modals

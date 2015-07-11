@@ -17,9 +17,9 @@ class TL.Views.VideoPage extends Backbone.View
         relatedVideo.on 'clicked', @renderMainVideo, @
         $relEl.append relatedVideo.el
       else 
-        renderPopular: ->
-        @thumbnails = new TL.Views.VideoThumbnails
-          el: '#popular'
+         renderPopular: ->
+         @thumbnails = new TL.Views.VideoThumbnails
+           el: '#popular'
     , @
 
   findVideo: ->
