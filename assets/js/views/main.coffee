@@ -10,10 +10,14 @@ class TL.Views.Main extends Backbone.View
 	kill: ->
 		@unbind()
 		@remove()
+
 	events:
+		'submit': 'prevent'
 		'click .share': 'share'
 		'click .account-form' : 'signup'
 		
+	prevent: (evt)->
+		evt.preventDefault()
 	initModals: ->
 		shareForm = new TL.Views.Modals.Share()
 		@$share = $ shareForm.el
