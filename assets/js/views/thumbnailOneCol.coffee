@@ -3,7 +3,7 @@ class TL.Views.VideoThumbnailOneCol extends Backbone.View
   className: ''
 
   initialize: () ->
-    _.bindAll @
+    _.bindAll @, 'render'
     @template = Handlebars.templates['home/thumbnail']
     @render()
     
