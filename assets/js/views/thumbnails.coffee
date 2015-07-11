@@ -2,8 +2,9 @@ class TL.Views.VideoThumbnails extends Backbone.View
   tagName: 'ul'
   className: 'thumbnails'
 
-  initialize: () ->
+  initialize: (options={}) ->
     _.bindAll @
+    @more = options.more
     #@template = Handlebars.templates['home/thumbnail']
     @render()
     @getVideos()
@@ -14,7 +15,10 @@ class TL.Views.VideoThumbnails extends Backbone.View
 
   getVideos: ->
     query = new Parse.Query TL.Models.VideoObject
-    query.equalTo "status", "approved"
+    if @more
+      query.equalTo "more", true
+    else
+      query.equalTo "status", "approved"
     query.limit(32)
     # limit here
     # TODO: structure query so it rejects main video on the server
@@ -29,6 +33,7 @@ class TL.Views.VideoThumbnails extends Backbone.View
     # if model.id != @model.id
       relatedVideo = new TL.Views.VideoThumbnail
         model: model
+        more: @more
       $relEl.append relatedVideo.el
     , @
   

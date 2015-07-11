@@ -20,6 +20,7 @@ class TL.Views.VideoPage extends Backbone.View
          renderPopular: ->
          @thumbnails = new TL.Views.VideoThumbnails
            el: '#popular'
+           more: true
     , @
 
   findVideo: ->
