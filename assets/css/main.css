@@ -87,6 +87,26 @@ a.share {
   background-color: rgba(9, 177, 9, 1);
 }
 
+.modal-content {
+  background-color: #113053;
+  color: white;
+  margin-top: 49px;
+  opacity: 0.97;
+}
+
+div.modal-header>h3 {
+  color: white;
+}
+
+.close {
+  color: white;
+}
+
+label.control-label {
+ font-size: 18px;
+ font-weight: normal;
+}
+
 .col-sm-3.col-md-3.col-lg-3.pull-right.uploadSignUp {
   padding-left: 0px;
   padding-right: 10px;
@@ -291,6 +311,9 @@ h2.heading {
   #search {
     width: 97%;
     margin-top: -5px;
+  }
+  .modal-content {
+    margin-top: 85px;
   }
 }
 
