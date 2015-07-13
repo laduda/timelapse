@@ -324,7 +324,7 @@ h2.heading {
   }
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
   .videoThumbnail {
     height: 400px;
   }
@@ -448,7 +448,7 @@ h3.rel {
   }
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
   div#mainvideo.col-sm-12.col-md-9 {
     margin-top: 50px;
   }
@@ -519,7 +519,7 @@ div.row.col-sm-10.col-sm-push-1.about-page h3 {
   margin-top: 0;
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
   div.row.col-sm-10.col-sm-push-1.about-page {
     margin-top: 45px;
   }
@@ -543,7 +543,7 @@ div.row.col-sm-10.col-sm-push-1.tutorial-page h3 {
   margin-top: 0;
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
   div.row.col-sm-10.col-sm-push-1.tutorial-page {
     margin-top: 45px;
   }
