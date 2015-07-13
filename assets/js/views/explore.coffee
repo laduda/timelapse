@@ -17,13 +17,13 @@ class TL.Views.Explore extends Backbone.View
 			@mapOptions =
 				zoom: 2
 				scrollwheel: false
-				overviewMapControl: true
+				overviewMapControl: false
 				streetViewControl: false
-				zoomControl: true
-				zoomControlOptions: position: google.maps.ControlPosition.RIGHT_CENTER
-				panControl: true
+				zoomControl: false
+				zoomControlOptions: position: google.maps.ControlPosition.RIGHT_TOP
+				panControl: false
 				panControlOptions: position: google.maps.ControlPosition.RIGHT_CENTER
-				center: new (google.maps.LatLng)(30.448674, -4.921875)
+				center: new (google.maps.LatLng)(33.724340, -29.531250)
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 
 			@map = new google.maps.Map(document.getElementById("map"), @mapOptions)
