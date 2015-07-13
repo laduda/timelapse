@@ -14,6 +14,7 @@ class TL.Views.VideoRelated extends Backbone.View
   openView: (event)->
     event.preventDefault()
     console.log @model.id
+    $('html, body').animate { scrollTop: 0 }, 'fast'
     @trigger 'clicked', @model
     @$el.html Handlebars.templates['home/main_video'] json
 

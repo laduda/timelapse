@@ -176,6 +176,10 @@ label.control-label {
     outline: none;
 }
 
+.pac-container { 
+  z-index: 1031;
+   }
+
 
 
 /*------------------------------------
