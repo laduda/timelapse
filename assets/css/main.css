@@ -329,8 +329,9 @@ h2.heading {
     height: 400px;
   }
   #search {
-    width: 97%;
+    width: 100%;
     margin-top: -5px;
+    margin-left: -10px;
   }
   .modal-content {
     margin-top: 85px;
@@ -453,9 +454,15 @@ h3.rel {
   }
   #map {
   width: 100%;
-  height: 430px;
+  height: 425px;
 }
 }
+
+/*@media only screen and (max-width : 375px) {
+  #search {
+  margin-left: -5px;
+  }
+}*/
 
 .hero-wrapper.thumbnail {
   background-color: rgba(17, 48, 83, 0.8);
