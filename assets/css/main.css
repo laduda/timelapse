@@ -10,7 +10,7 @@ body {
   /*overflow-x: hidden;*/
 }
 
-input, textarea, select {
+body input[type], textarea, select {
   -webkit-appearance: none;
 }
 
