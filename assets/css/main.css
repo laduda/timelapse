@@ -5,10 +5,9 @@ html {
 }
 
 body {
-  padding-top: 50px;
-  height: 100%; 
+  padding-top: 50px; 
   background-color: #EFFFFE; 
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 #map {
@@ -51,6 +50,10 @@ border: none;
 .navbar-inverse .navbar-brand {
   font-size: 1.8em;
   color: #FFF;
+}
+
+.fb-like-wrap {
+  overflow: hidden;
 }
 
 /*.navbar-brand > small {
